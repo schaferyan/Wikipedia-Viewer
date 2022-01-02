@@ -1,0 +1,102 @@
+@import @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+body{
+  background-color: black;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a{
+  color: inherit;
+}
+.wiki-title{
+  position: relative;
+  display: inline-block;
+}
+.wiki-extract{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.wiki-title:hover + .wiki-extract{
+    display: block;
+}
+
+.text-center{
+  text-align: center;
+}
+#wrapper{
+  padding: 30px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+  border-radius: 20px;
+  }
+#results{
+  margin: 0 auto;
+  width: 350px;
+}
+#results-list{
+  padding-top: 10px;
+  width: 100%;
+  text-align: left;
+}
+#results-list li p{
+  text-align: left;
+  max-height: 90px;
+  max-width: 50%;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
+  overflow: hidden;
+}
+#w{
+  width: 100px;
+  height: auto;
+}
+#glass{
+  width: 70px;
+}
+#main-heading{
+  padding: 20px;
+}
+h3{
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+#wiki-logo{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 500px){
+  body{
+    background-color: white;
+  }
+  #w{
+    width: 70px;
+  }
+  #glass{
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  body{
+    background-color: white;
+  }
+  #w{
+    width: 100px;
+  }
+  #glass{
+    display: none;
+  }
+  button{
+    
+  }
+}
